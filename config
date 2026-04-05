@@ -11,6 +11,10 @@
 
 set $mod Mod4
 
+# Personal multi-monitor setup.
+# exec_always is useful here for sending a signal to the second monitor when need be.
+exec_always --no-startup-id xrandr --output HDMI-0 --auto --output DP-4 --auto --right-of HDMI-0
+
 # Prophylaxis against Emacs pinky.
 exec --no-startup-id setxkbmap -option ctrl:nocaps
 
